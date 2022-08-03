@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+/* font-family: 'Overpass', sans-serif;
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: hsl(213, 19%, 18%);
+  width: 400px;
+  color: aliceblue;
+  border-radius: 1.5rem;
+  display: flex;
+  /* display: none; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.container.deactive{
+  display: none;
+}
+.star {
+  font-size: 1.5rem;
+  display: flex;
+  align-self: flex-start;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: hsl(218, 7%, 22%);
+
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+.title {
+  margin: 30px;
+
+  font-weight: 900;
+  font-family: "Overpass", sans-serif;
+  line-height: 1;
+}
+.para {
+  margin: 30px;
+  padding: 20ps;
+  font-size: 15px;
+  line-height: 1.5;
+  color: hsl(216, 12%, 54%);
+  font-family: "Overpass", sans-serif;
+}
+.numbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.one {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 10px;
+  padding: 1rem;
+  background-color: hsl(216, 5%, 21%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: hsl(216, 12%, 54%);
+}
+.one:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+}
+.one.active {
+  background-color: hsl(216, 12%, 54%);
+  color: #fff;
+  font-weight: 900;
+}
+.btn-submit {
+  text-align: center;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 30px;
+  font-size: 0.9rem;
+  margin: 30px;
+  padding: 10px 8rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: 0;
+  font-family: "Overpass", sans-serif;
+}
+.btn-submit:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.thankyou {
+  display: none;
+  background-color: hsl(213, 19%, 18%);
+  width: 400px;
+  color: aliceblue;
+  border-radius: 1.5rem;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.ty {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+
+  padding: 0.4rem;
+}
+.selection {
+  text-align: center;
+  background-color: hsl(216, 5%, 21%);
+  color: hsl(25, 97%, 53%);
+  letter-spacing: 1px;
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.selection.rate{
+  visibility: hidden;
+}
+
+.thanks{
+  font-size:2rem;
+  font-family: "Overpass", sans-serif ;
+  padding: 10px;
+  margin: 10px;
+}
+.lastnote{
+  font-size: 15px;
+  text-align: center;
+  font-family: "Overpass", sans-serif ;
+  padding: 10px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  color: hsl(216, 6%, 52%);
+}
